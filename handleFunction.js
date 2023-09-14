@@ -1,7 +1,6 @@
 var config = require("./config.js");
 var variable = require("./variable.js");
 const fs = require("fs");
-var main = require("./main.js");
 let get_eui_flag = false;
 const client = variable.client_mqtt;
 var clear_data = false;
@@ -60,22 +59,6 @@ function saveDataIntoFile(eui_gw, id_gw) {
     catch (error) {
         console.log("Error: ", error);
     }
-    // console.log("eui (saveDataIntoFile): ", jsonObject.eui_gateway);
-    // return jsonObject.eui_gateway;
-    // if (clear_data) {
-    //     jsonObject.eui_gateway = '';
-    //     jsonObject.ip_gateway = '';
-    //     const json_data = JSON.stringify(jsonObject, null, 2);
-    //     try {
-    //         fs.writeFileSync(variable.file_data, json_data);
-    //         console.log(">> Save data into file");
-    //     }
-    //     catch (error) {
-    //         console.log("Error: ", error);
-    //     }
-    //     clear_data = false;
-    //     // process.exit();
-    // }
 }
 
 function logOn(GW_EUI) {
@@ -132,7 +115,7 @@ function isIpDifferent(ip_gateway_in_file_data) {
         console.log("IP import: ", ip_gateway_imported);
         // process.exit(0);
         saveDataIntoFile("", "");
-        main.Constants.flag_t = 'isNone';
+        variable.flag_t = 'isNone';
     }
 
     // }

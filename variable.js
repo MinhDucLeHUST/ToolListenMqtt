@@ -20,10 +20,15 @@ const client_mqtt = mqtt.connect(connectUrl, {
     reconnectPeriod: 1000,
 });
 
+var flag_t = "isOk";
+
 module.exports = {
     LOG_FILE,
     file_data,
     client_mqtt,
     HOST,
+    flag_t,
 };
+
+
 

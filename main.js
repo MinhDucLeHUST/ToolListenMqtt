@@ -1,8 +1,6 @@
 // const mqtt = require("mqtt");
 // var config = require("./config.js");
-var Constants = {
-  flag_t: 'isOk',
-};
+
 
 const fs = require("fs");
 var handle_func = require("./handleFunction.js");
@@ -30,13 +28,15 @@ fs.readFile(variable.file_data, 'utf8', (err, data) => {
   // Check if the value of the "email" key is an empty string
   if (jsonData.ip_gateway === '') {
     console.log('The "ip_gateway" key is empty.');
+    variable.flag_t = "isNone";
 
   } else {
     // data_exist = jsonData.eui_gateway;
     console.log('The "ip_gateway" key is not empty.');
+    variable.flag_t = "isOk";
   }
   console.log("ip in readFile: ", jsonData.ip_gateway);
-  // handle_func.isIpDifferent(jsonData.ip_gateway);
+  handle_func.isIpDifferent(jsonData.ip_gateway);
 });
 // handle_func.isIpDifferent(JSON.parse(data_in_file).ip_gateway);
 
@@ -53,7 +53,9 @@ client.on("connect", () => {
   var temp = jsonData.ip_gateway;
   var eui_gw = jsonData.eui_gateway;
   // console.log(">>>> temp connect = ", temp);
-  if (!temp || Constants.flag_t == 'isNone') {
+  // if (!temp || variable.flag_t == 'isNone') {
+  console.log("variable.flag_t: ", variable.flag_t);
+  if (variable.flag_t == 'isNone') {
     client.subscribe("#", (error) => {
       if (error) {
         rejects(error);
@@ -68,7 +70,8 @@ client.on("connect", () => {
 client.on("message", (topic, payload) => {
   var temp = jsonData.ip_gateway;
   // console.log(">>>> Received message from GW_EUI: ", temp);
-  if (!temp) {
+  // if (!temp) {
+  if (variable.flag_t == 'isNone') {
     if (/gw\//.test(topic)) {
       // console.log(`Catch topic contains EUI: ${topic}`);
 
@@ -82,5 +85,3 @@ client.on("message", (topic, payload) => {
   }
   // saveDataIntoFile(variable.EUI)
 });
-
-module.exports = { Constants: Constants };
