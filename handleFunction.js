@@ -105,17 +105,16 @@ function isIpDifferent(ip_gateway_in_file_data) {
     var ip_gateway_imported = variable.HOST;
     // while (ip_gateway_in_file_data != undefined) {
     if (ip_gateway_in_file_data != ip_gateway_imported) {
-        console.log("========================= Error =========================");
-        console.log(" 1. Wrong IP Gateway, please check your ip again!");
-        console.log(" 2. Run node clean");
-        console.log(" 3. Run node main.js ip_gw");
-        console.log("=========================================================");
-        // console.log("Run node clean => Please re-enter IP GATEWAY: node main.js ip_gw");
-        console.log("IP in file: ", ip_gateway_in_file_data);
-        console.log("IP import: ", ip_gateway_imported);
+        // console.log("========================= Error =========================");
+        // console.log("= 1. Wrong IP Gateway, please check your ip again!      =");
+        // console.log("= 2. Run node clean                                     =");
+        // console.log("= 3. Run node main.js ip_gw                             =");
+        // console.log("=========================================================");
+        console.log("IP get in file: ", ip_gateway_in_file_data);
+        console.log("IP you import: ", ip_gateway_imported);
         // process.exit(0);
         saveDataIntoFile("", "");
-        variable.flag_t = 'isNone';
+        variable.flag_check_ip_different_or_empty = 'isNone';
     }
 
     // }

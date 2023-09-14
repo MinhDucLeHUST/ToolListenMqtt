@@ -20,14 +20,14 @@ const client_mqtt = mqtt.connect(connectUrl, {
     reconnectPeriod: 1000,
 });
 
-var flag_t = "isOk";
+var flag_check_ip_different_or_empty = "isOk";
 
 module.exports = {
     LOG_FILE,
     file_data,
     client_mqtt,
     HOST,
-    flag_t,
+    flag_check_ip_different_or_empty,
 };
 
 
