@@ -1,0 +1,217 @@
+[//Time: 14:29:56:928   14-9-2023
+// 0. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zcl window-covering go-to-lift-percent 0x0"},{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"}]},
+
+//Time: 14:29:57:37   14-9-2023
+// 1. gw/8CF681FFFEE92E9E/executed:
+{"command":"zcl window-covering go-to-lift-percent 0x0"},
+
+//Time: 14:29:57:37   14-9-2023
+// 1. gw/8CF681FFFEE92E9E/executed:
+{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"},
+
+//Time: 14:29:57:38   14-9-2023
+// 1. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0B","commandData":"0x0500","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:29:57:100   14-9-2023
+// 4. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","commandId":"0x0A","commandData":"0x00001000","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:29:57:100   14-9-2023
+// 4. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","attributeId":"0x0000","attributeBuffer":"0x00","attributeDataType":"0x10","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:29:57:100   14-9-2023
+// 4. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":0,"trait":"traitOnOff"}}}},
+
+//Time: 14:30:2:893   14-9-2023
+// 7. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0A","commandData":"0x08002000","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:2:958   14-9-2023
+// 8. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","attributeId":"0x0008","attributeBuffer":"0x00","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:3:14   14-9-2023
+// 9. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":0,"trait":"traitSetPercentage"}}}},
+
+//Time: 14:30:35:992   14-9-2023
+// 10. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zcl window-covering go-to-lift-percent 0x64"},{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"}]},
+
+//Time: 14:30:36:9   14-9-2023
+// 11. gw/8CF681FFFEE92E9E/executed:
+{"command":"zcl window-covering go-to-lift-percent 0x64"},
+
+//Time: 14:30:36:10   14-9-2023
+// 11. gw/8CF681FFFEE92E9E/executed:
+{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"},
+
+//Time: 14:30:36:10   14-9-2023
+// 11. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0B","commandData":"0x0500","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:36:10   14-9-2023
+// 11. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","commandId":"0x0A","commandData":"0x00001001","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:36:10   14-9-2023
+// 11. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","attributeId":"0x0000","attributeBuffer":"0x01","attributeDataType":"0x10","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:36:10   14-9-2023
+// 11. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":1,"trait":"traitOnOff"}}}},
+
+//Time: 14:30:43:3   14-9-2023
+// 17. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0A","commandData":"0x08002064","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:43:69   14-9-2023
+// 18. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","attributeId":"0x0008","attributeBuffer":"0x64","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:43:70   14-9-2023
+// 18. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":100,"trait":"traitSetPercentage"}}}},
+
+//Time: 14:30:47:18   14-9-2023
+// 20. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":"1","value":"1","trait":"traitMotorSteering"}}}},
+
+//Time: 14:30:47:42   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zcl window-covering mode 0xFCC0 0x0000 0x42"},{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"}]},
+
+//Time: 14:30:47:44   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/executed:
+{"command":"zcl window-covering go-to-lift-percent 0x64"},
+
+//Time: 14:30:47:44   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/executed:
+{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"},
+
+//Time: 14:30:47:43   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/executed:
+{"command":"zcl window-covering mode 0xFCC0 0x0000 0x42"},
+
+//Time: 14:30:47:42   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zcl window-covering go-to-lift-percent 0x64"},{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"}]},
+
+//Time: 14:30:47:44   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0xFCC0","commandId":"0x04","commandData":"0x00000042080702020000010200","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:43   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/executed:
+{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"},
+
+//Time: 14:30:47:44   14-9-2023
+// 21. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0B","commandData":"0x057E","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:110   14-9-2023
+// 29. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","commandId":"0x0A","commandData":"0x00001001","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:110   14-9-2023
+// 29. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":1,"trait":"traitOnOff"}}}},
+
+//Time: 14:30:47:110   14-9-2023
+// 29. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","attributeId":"0x0000","attributeBuffer":"0x01","attributeDataType":"0x10","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:666   14-9-2023
+// 32. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0A","commandData":"0x08002001","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:777   14-9-2023
+// 33. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","attributeId":"0x0008","attributeBuffer":"0x01","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:47:777   14-9-2023
+// 33. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":0,"trait":"traitSetPercentage"}}}},
+
+//Time: 14:30:53:687   14-9-2023
+// 35. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0A","commandData":"0x08002064","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:53:797   14-9-2023
+// 36. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","attributeId":"0x0008","attributeBuffer":"0x64","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:30:53:798   14-9-2023
+// 36. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":100,"trait":"traitSetPercentage"}}}},
+
+//Time: 14:31:2:840   14-9-2023
+// 38. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zcl window-covering go-to-lift-percent 0x35"},{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"}]},
+
+//Time: 14:31:2:904   14-9-2023
+// 39. gw/8CF681FFFEE92E9E/executed:
+{"command":"zcl window-covering go-to-lift-percent 0x35"},
+
+//Time: 14:31:2:904   14-9-2023
+// 39. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0B","commandData":"0x0500","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:31:2:904   14-9-2023
+// 39. gw/8CF681FFFEE92E9E/executed:
+{"command":"plugin device-table send {2C1165FFFE33BFA2} 0x1"},
+
+//Time: 14:31:3:4   14-9-2023
+// 42. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","commandId":"0x0A","commandData":"0x00001000","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:31:3:114   14-9-2023
+// 43. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0006","attributeId":"0x0000","attributeBuffer":"0x00","attributeDataType":"0x10","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:31:3:114   14-9-2023
+// 43. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":0,"trait":"traitOnOff"}}}},
+
+//Time: 14:31:7:828   14-9-2023
+// 45. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","commandId":"0x0A","commandData":"0x08002035","clusterSpecific":false,"deviceID":"0x4720","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:31:7:933   14-9-2023
+// 46. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0102","attributeId":"0x0008","attributeBuffer":"0x35","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x2C1165FFFE33BFA2","endpoint":1}},
+
+//Time: 14:31:7:933   14-9-2023
+// 46. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateTrait","data":{"deviceEUI":"0x2C1165FFFE33BFA2","child":1,"value":53,"trait":"traitSetPercentage"}}}},
+
+//Time: 14:31:13:691   14-9-2023
+// 48. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0000","commandId":"0x0A","commandData":"0x01002048","clusterSpecific":false,"deviceID":"0x6C75","deviceEuiFlag":true,"deviceEndpoint":{"eui64":"0x588E81FFFE5A3EBC","endpoint":1}},
+
+//Time: 14:31:13:777   14-9-2023
+// 49. gw/8CF681FFFEE92E9E/zclresponse:
+{"clusterId":"0x0000","attributeId":"0x0001","attributeBuffer":"0x48","attributeDataType":"0x20","deviceEndpoint":{"eui64":"0x588E81FFFE5A3EBC","endpoint":1}},
+
+//Time: 14:31:19:874   14-9-2023
+// 50. gw/8CF681FFFEE92E9E/commands:
+{"commands":[{"command":"zdo leave 0x4720 1 0"}]},
+
+//Time: 14:31:20:242   14-9-2023
+// 51. gw/8CF681FFFEE92E9E/executed:
+{"command":"zdo leave 0x4720 1 0"},
+
+//Time: 14:31:20:242   14-9-2023
+// 51. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"typeMessage":"updateData","dataMessage":{"connectivityType":"zigbee","properties":{"command":"updateDeviceNetworkState","data":{"deviceEUI":"0x2C1165FFFE33BFA2","deviceState":32}}}},
+
+//Time: 14:31:20:314   14-9-2023
+// 53. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+{"requestID":"add_child_device***20867_1694675508951","typeMessage":"commission","dataMessage":{"connectivityType":"zigbee","properties":{"command":"removeDevice","data":{"deviceEUI":"0x2C1165FFFE33BFA2"}}}},
+
+]

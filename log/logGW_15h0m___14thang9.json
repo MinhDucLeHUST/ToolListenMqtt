@@ -1,0 +1,46 @@
+[
+  //Time: 15:0:57:441   14-9-2023
+  // 0. gw/8CF681FFFEE92E9E/commands:
+  {
+    "commands": [
+      { "command": "zcl window-covering go-to-lift-percent 0x0" },
+      { "command": "plugin device-table send {2C1165FFFE33BFA2} 0x1" }
+    ]
+  },
+
+  //Time: 15:0:57:694   14-9-2023
+  // 1. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x2C1165FFFE33BFA2",
+          "child": 1,
+          "value": 0,
+          "trait": "traitOnOff"
+        }
+      }
+    }
+  },
+
+  //Time: 15:1:1:149   14-9-2023
+  // 2. ConnectivityAssistantInSideZigbeeHandleToCommunicate:
+  {
+    "typeMessage": "updateData",
+    "dataMessage": {
+      "connectivityType": "zigbee",
+      "properties": {
+        "command": "updateTrait",
+        "data": {
+          "deviceEUI": "0x2C1165FFFE33BFA2",
+          "child": 1,
+          "value": 0,
+          "trait": "traitSetPercentage"
+        }
+      }
+    }
+  }
+]
