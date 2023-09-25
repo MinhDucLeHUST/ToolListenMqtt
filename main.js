@@ -62,7 +62,7 @@ client.on("connect", () => {
       console.log(`->> Subscribe topic # to extract EUI => please wait a minute ... `);
     });
   } else {
-    handle_func.logOn2(eui_gw);
+    handle_func.subTopicWithoutListenAll(eui_gw);
   }
 });
 
@@ -79,7 +79,7 @@ client.on("message", (topic, payload) => {
       handle_func.saveDataIntoFile(EUI);
       console.log(`EUI Gateway: ${EUI}`);
       client.removeAllListeners();
-      handle_func.logOn(EUI);
+      handle_func.subTopicAfterUnsubAll(EUI);
     }
   }
   // saveDataIntoFile(variable.EUI)

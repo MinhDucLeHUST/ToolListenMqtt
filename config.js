@@ -23,8 +23,8 @@ var Topics = {
   /*Topic communicate with zigbee-handle*/
   MQTT_TOPIC_REICEVIE_MESSAGE_IN_SIDE_ZIGBEE:
     "ConnectivityAssistantInSideZigbeeHandleToCommunicate", //MQTT Topic to receivce message from zigbee-handle
-  // MQTT_TOPIC_SEND_MESSAGE_IN_SIDE_ZIGBEE:
-  // "ConnectivityAssistantInsideCommunicateToZigbeeHandle", //MQTT Topic to send message to zigbee-handle
+  MQTT_TOPIC_SEND_MESSAGE_IN_SIDE_ZIGBEE:
+    "ConnectivityAssistantInsideCommunicateToZigbeeHandle", //MQTT Topic to send message to zigbee-handle
 
   /*Topic communicate with BLE*/
   // MQTT_TOPIC_REICEVIE_MESSAGE_IN_SIDE_BLUETOOTH			: "ConnectivityAssistantInSideBluetoothHandleToCommunicate", //MQTT Topic to receivce message from BLE
@@ -37,7 +37,7 @@ var Topics = {
   /*Topic Keepalive*/
   // MQTT_TOPIC_REICEVIE_MESSAGE_OUT_SIDE_KEEPALIVE:
   //   "keepAlive_connectivityAssistant",
-  // MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_KEEPALIVE 				: "keepAlive_response_connectivityAssistant",
+  // MQTT_TOPIC_SEND_MESSAGE_OUT_SIDE_KEEPALIVE: "keepAlive_response_connectivityAssistant",
   // ID_KEEPALIVE 											: "connectivityAssistant",
 
 
@@ -48,7 +48,7 @@ var Topics = {
   // GW_DEVICE_JOINED: "/devicejoined",
   // GW_DEVICE_LEFT: "/deviceleft",
   // GW_EXECUTED: "/executed",
-  // GW_ZCL_RESPONSE: "/zclresponse",
+  GW_ZCL_RESPONSE: "/zclresponse",
 };
 
 function assignTopics() {

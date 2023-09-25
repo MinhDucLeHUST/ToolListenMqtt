@@ -51,7 +51,7 @@ fs.readFile(file_data, 'utf8', (err, data) => {
  *
  * @param {*} GW_EUI: EUI of GW we extract from topic prototype (gw/...EUI.../...)
  */
-function logOn(GW_EUI) {
+function subTopicAfterUnsubAll(GW_EUI) {
     /**
      * Un & Subcribe topic
      */
@@ -91,7 +91,7 @@ function logOn(GW_EUI) {
     }
 }
 
-function logOn2(eui) {
+function subTopicWithoutListenAll(eui) {
     config.Config.GW_EUI = eui;
     config.assignTopics();
     const listenedTopics = Object.values(config.Topics);
@@ -100,11 +100,6 @@ function logOn2(eui) {
             console.log(`->> Subscribe topic '${topic}'`);
         });
     }
-
-    /**
-     * Write to file
-     */
-    // console.log("value = ", get_eui_flag);
     var countMessage = 0; // index the message
     fs.appendFile(LOG_FILE, "[", (err) => { });
 
@@ -130,9 +125,6 @@ process.on("SIGINT", () => {
     process.exit(0);
 });
 
-/*****************************************************
- *                    MAIN
- * ***************************************************/
 client.on("connect", () => {
     console.log(">> Connected");
     var temp = jsonData.eui_gateway;
@@ -145,7 +137,7 @@ client.on("connect", () => {
             console.log(`->> Subscribe topic # to extract EUI`);
         });
     } else {
-        logOn2(temp);
+        subTopicWithoutListenAll(temp);
     }
 });
 
@@ -164,7 +156,7 @@ client.on("message", (topic, payload) => {
             saveDataIntoFile(EUI);
             console.log(`EUI Gateway: ${EUI}`);
             client.removeAllListeners();
-            logOn(EUI);
+            subTopicAfterUnsubAll(EUI);
         }
     }
 });

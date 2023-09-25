@@ -1,6 +1,6 @@
 const fs = require('fs');
 // var handle_func = require("./handleFunction.js");
-const folder_to_delete = 'C:/Users/Admin/Downloads/123/tool_listen_GW/log';
+const folder_to_delete = 'C:/Users/Admin/Downloads/Tool/GetLogMqtt/log';
 
 fs.readdir(folder_to_delete, (err, files) => {
     if (err) {

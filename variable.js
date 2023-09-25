@@ -3,7 +3,7 @@ var config = require("./config.js");
 
 const timestamp = Date.now();
 const dateFormat = new Date(timestamp);
-const LOG_FILE = `./log/logGW_${dateFormat.getHours()}h${dateFormat.getMinutes()}m___${dateFormat.getDate()}thang${dateFormat.getMonth() + 1}.json`;
+const LOG_FILE = `./log/GW_${dateFormat.getHours()}h${dateFormat.getMinutes()}m___${dateFormat.getDate()}thang${dateFormat.getMonth() + 1}.json`;
 config.Config.GW_ADDRESS = process.argv[2];
 // console.log("IP Gateway: ", process.argv[2]);
 const HOST = config.Config.GW_ADDRESS;
@@ -21,6 +21,7 @@ const client_mqtt = mqtt.connect(connectUrl, {
 });
 
 var flag_check_ip_different_or_empty = "isOk";
+// var jsonData = "";
 
 module.exports = {
     LOG_FILE,

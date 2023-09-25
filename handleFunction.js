@@ -5,7 +5,7 @@ let get_eui_flag = false;
 const client = variable.client_mqtt;
 var clear_data = false;
 
-function logOn2(eui) {
+function subTopicWithoutListenAll(eui) {
     config.Config.GW_EUI = eui;
     config.assignTopics();
     const listenedTopics = Object.values(config.Topics);
@@ -14,6 +14,7 @@ function logOn2(eui) {
             console.log(`->> Subscribe topic '${topic}'`);
         });
     }
+
     var countMessage = 0; // index the message
     fs.appendFile(variable.LOG_FILE, "[", (err) => { });
 
@@ -61,7 +62,7 @@ function saveDataIntoFile(eui_gw, id_gw) {
     }
 }
 
-function logOn(GW_EUI) {
+function subTopicAfterUnsubAll(GW_EUI) {
     /**
      * Un & Subcribe topic
      */
@@ -80,10 +81,6 @@ function logOn(GW_EUI) {
         });
     }
 
-    /**
-     * Write to file
-     */
-    // console.log("value = ", get_eui_flag);
     var countMessage = 0; // index the message
     fs.appendFile(variable.LOG_FILE, "[", (err) => { });
     if (get_eui_flag == true) {
@@ -121,8 +118,8 @@ function isIpDifferent(ip_gateway_in_file_data) {
 }
 
 var handleFunc = {
-    logOn2: logOn2,
-    logOn: logOn,
+    subTopicWithoutListenAll: subTopicWithoutListenAll,
+    subTopicAfterUnsubAll: subTopicAfterUnsubAll,
     saveDataIntoFile: saveDataIntoFile,
     getTimeLog: getTimeLog,
     isIpDifferent: isIpDifferent,
